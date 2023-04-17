@@ -42,8 +42,8 @@ public class Main {
                         return person.getAge() <= 65;
                     }
                     else
-                    // женщины до 60 лет
-                    return person.getAge() <= 60;
+                        // женщины до 60 лет
+                        return person.getAge() <= 60;
                 })
                 .sorted(Comparator.comparing(Person::getFamily))
                 .collect(Collectors.toList());
